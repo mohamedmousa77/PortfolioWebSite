@@ -1,0 +1,21 @@
+<header class="header">
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h2>Mohamed</h2>
+        </div>
+
+        <div class="nav-menu" [ngClass]="{'active': isMenuOpen}">
+            <a href="#" (click)="scrollToSection('hero')" class="nav-link">Home</a>
+            <a href="#" (click)="scrollToSection('about')" class="nav-link">About</a>
+            <a href="#" (click)="scrollToSection('skills')" class="nav-link">Skills</a>
+            <a href="#" (click)="scrollToSection('projects')" class="nav-link">Projects</a>
+            <a href="#" (click)="scrollToSection('contact')" class="nav-link">Contact</a>
+        </div>
+
+        <div class="hamburger" (click)="toggleMenu()" [ngClass]="{'active': isMenuOpen}">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>

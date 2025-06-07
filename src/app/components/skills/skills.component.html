@@ -1,0 +1,37 @@
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <p class="section-subtitle">Technologies I work with</p>
+    </div>
+    
+    <div class="skills-content">
+      <div class="technical-skills">
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-item" *ngFor="let skill of technicalSkills">
+            <div class="skill-header">
+              <div class="skill-info">
+                <i [class]="skill.icon"></i>
+                <span>{{skill.name}}</span>
+              </div>
+              <span class="skill-percentage">{{skill.level}}%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" [style.width.%]="skill.level"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tools-section">
+        <h3>Tools & Technologies</h3>
+        <div class="tools-grid">
+          <div class="tool-item" *ngFor="let tool of tools">
+            {{tool}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
