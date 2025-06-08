@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StepperService } from '../../services/stepper.service';
 
 @Component({
   selector: 'app-intro',
@@ -7,7 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './intro.component.css'
 })
 export class IntroComponent {
+
+  /**
+   *
+   */
+  constructor(private st: StepperService) {
+    
+  }
   scrollToSection(sectionId: string) {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    this.st.scrollToSection(sectionId);
+    // document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   }
 }

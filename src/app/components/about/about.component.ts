@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-  experience = 3;
+  experience = '5';
   projectsCompleted = 25;
   happyClients = 15;
 }
