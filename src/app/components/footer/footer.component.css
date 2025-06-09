@@ -16,6 +16,10 @@
   margin-bottom: 1rem;
   color: white;
 }
+.social-links a{
+  /* display: flex; */
+  padding-left: 10px;
+}
 
 .footer-section p {
   color: #bdc3c7;
