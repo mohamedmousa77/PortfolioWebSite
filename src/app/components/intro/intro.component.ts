@@ -9,9 +9,6 @@ import { StepperService } from '../../services/stepper.service';
 })
 export class IntroComponent {
 
-  /**
-   *
-   */
   constructor(private st: StepperService) {
     
   }
