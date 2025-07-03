@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import emailjs from '@emailjs/browser';
 
 
 @Component({
@@ -29,12 +30,36 @@ export class ContactsComponent {
       // Handle form submission here
       console.log('Form submitted:', this.contactForm.value);
       
+      const templateParams = {
+      from_name: this.contactForm.value.name,
+      from_email: this.contactForm.value.email,
+      subject: this.contactForm.value.subject,
+      message: this.contactForm.value.message
+    };
+
+     emailjs.send(
+      'service_i33f9fm',         // ✅ Il tuo Service ID
+      'template_sbm2j6l',         // ✅ Il tuo Template ID (da EmailJS)
+      templateParams,
+      'RovFvQJq-a5oxrNYO'        // ✅ La tua Public Key (da "Account > API Keys")
+    )
+    .then(() => {
+      alert('Messaggio inviato con successo!');
+      this.contactForm.reset();
+      this.isSubmitting = false;
+    })
+    .catch((error) => {
+      console.error('Errore nell\'invio:', error);
+      alert('Si è verificato un errore. Riprova più tardi.');
+      this.isSubmitting = false;
+    });
+
       // Simulate API call
-      setTimeout(() => {
-        this.isSubmitting = false;
-        this.contactForm.reset();
-        alert('Message sent successfully!');
-      }, 2000);
+      // setTimeout(() => {
+      //   this.isSubmitting = false;
+      //   this.contactForm.reset();
+      //   alert('Message sent successfully!');
+      // }, 2000);
     }
   }
 
