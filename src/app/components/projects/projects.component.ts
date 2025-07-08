@@ -22,25 +22,11 @@ export class ProjectsComponent {
 projects: Project[] = [
     {
       id: 1,
-      title: 'Point Of Sale',
-      description: `It’s revolutionizes 
-      workforce management, offering a comprehensive solution for companies to effortlessly track employee attendance, requests, 
-      and related insights. With dual interfaces catering to both managers and employees, the app streamlines communication and 
-      enhances transparency within the workplace. Utilizing Flutter for cross-platform functionality, “Attendance” ensures a 
-      seamless experience for users on both App Store and Play Store.`,
-      image: 'pos-cover-img.png',
-      technologies: ['Flutter', 'Dart', 'Rest API'],
-      liveUrl: 'https://www.linkedin.com/posts/mohamedmousa-_flutter-flutterdev-flutterdeveloper-activity-6940025351460765696-hSEZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2EQFwBWq7g1Ci3vEvUZMVDQ8EeZTv42JY',
-      githubUrl: 'https://github.com/mohamedmousa77/Point-Of-Sale-Application',
-      featured: true
-    },
-    {
-      id: 2,
       title: 'Personal Finance App',
       image:'Overview-page.jpg',
       description: `
-      Project Overview: This is a personal finance web application that helps users manage their budget, track transactions, 
-      organize savings into pots, and monitor recurring bills — built with Angular on the front end and ASP.NET Core on the back end.
+      This is a personal finance web application that helps users manage their budget, track transactions, 
+      organize savings into pots, and monitor recurring bills
       Tech Stack Highlights: Front end: Angular (modular components, routing, responsive UI, charts)
       Back end: ASP.NET Core Web API with Entity Framework Core + SQL Server
       Clean REST architecture for smooth front‑back communication
@@ -50,6 +36,20 @@ projects: Project[] = [
       githubUrl: 'https://github.com/mohamedmousa77/FinancialApp',
       featured: true
     },
+    {
+      id: 2,
+      title: 'Wafra',
+      image:'wafraa.png',
+      description: `Wafra is a sleek, user-friendly e-commerce mobile application developed using Flutter, designed for seamless 
+      performance on both iOS and Android devices. This app allows users to browse and shop from a wide range of categories 
+      including fashion, electronics, and lifestyle products, with intuitive navigation and clean UI design. The backend is connected 
+      via RESTful APIs, ensuring efficient data handling and a smooth user experience.
+      `,
+      technologies: ['Flutter', 'Dart', 'Rest API', 'Post Man'],
+      liveUrl: 'https://www.linkedin.com/in/mohamedmousa-/',
+      githubUrl: 'https://github.com/mohamedmousa77/Wafra',
+      featured: false
+    },    
     {
       id: 3,
       title: 'Multi Step Form',
@@ -62,27 +62,31 @@ projects: Project[] = [
       githubUrl: 'https://github.com/mohamedmousa77/multi-step-form',
       featured: true
     },
+    
     {
       id: 4,
-      title: 'Wafra',
-      image:'wafraa.png',
-      description: `Wafra is a sleek, user-friendly e-commerce app developed with Flutter for smooth performance on both iOS and Android, 
-      offering a diverse selection of fashion, electronics, and lifestyle products; the repository is private due to client 
-      confidentiality—feel free to contact me for access. `,
-      technologies: ['Flutter', 'Dart', 'Rest API', 'Post Man'],
+      title: 'Rock Paper Scissors',
+      description: `Allow users to enjoy an optimized game layout across all screen sizes as they play Rock, Paper, Scissors 
+      against the computer, with optional features including score persistence after browser refresh and an extended mode featuring 
+      Rock, Paper, Scissors, Lizard, Spock.`,
+      image: 'rock-paper-scissors-cover-img.png',
+      technologies: ['HTML', 'Java Script', 'TypeScripy', 'CSS'],
       liveUrl: 'https://www.linkedin.com/in/mohamedmousa-/',
-      githubUrl: 'https://github.com/mohamedmousa77/Wafra',
-      featured: false
+      githubUrl: 'https://github.com/mohamedmousa77/Rock--Paper--Scissors-game',
+      featured: true
     },
+    
     {
       id: 5,
-      title: 'Let’s Fly Application',
-      image:'your-trip-cover-img.jpg',
-      description: `Let’s Fly brings your vision to life with a beautifully designed Flutter app, delivering a seamless and intuitive user experience across platforms.`,
-      technologies: ['Flutter', 'Dart','Figma'],
-      liveUrl: 'https://www.linkedin.com/in/mohamedmousa-/',
-      githubUrl: 'https://github.com/mohamedmousa77/Your-Trip',
-      featured: false
+      title: 'Connect 4 Game',
+      description: `An interactive Connect Four game for the web, playable in your browser with a clean UI and smart AI opponent. 
+      Built using Angular, TypeScript and CSS, this project lets you test your strategy skills against a computer that doesn’t 
+      go easy on you.`,
+      image: 'connect-4-game.jpg',
+      technologies: ['Angular', 'Type Scripy', 'CSS'],
+      liveUrl: 'https://www.linkedin.com/posts/mohamedmousa-_excited-to-share-my-latest-project-connectfour-activity-7347985200208928769-kzmN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2EQFwBWq7g1Ci3vEvUZMVDQ8EeZTv42JY',
+      githubUrl: 'https://github.com/mohamedmousa77/Connect-Four-Game',
+      featured: true
     },
     {
       id: 6,
@@ -98,6 +102,16 @@ projects: Project[] = [
     },
     {
       id: 7,
+      title: 'Let’s Fly Application',
+      image:'your-trip-cover-img.jpg',
+      description: `Let’s Fly brings your vision to life with a beautifully designed Flutter app, delivering a seamless and intuitive user experience across platforms.`,
+      technologies: ['Flutter', 'Dart','Figma'],
+      liveUrl: 'https://www.linkedin.com/in/mohamedmousa-/',
+      githubUrl: 'https://github.com/mohamedmousa77/Your-Trip',
+      featured: false
+    },    
+    {
+      id: 8,
       title: 'WhatsApp Clone',
       image:'social-wa-cover-img.png',
       description: `A real-time chat application replicating WhatsApp’s core features, 
@@ -108,7 +122,7 @@ projects: Project[] = [
       featured: false
     },
     {
-      id: 8,
+      id: 9,
       title: 'Instgram and Facebook clone',
       image:'social-insta-cover-img.png',
       description: `A social media fusion app inspired by Instagram and Facebook, allowing users to share updates, 
@@ -119,7 +133,7 @@ projects: Project[] = [
       featured: false
     },
     {
-      id: 9,
+      id: 10,
       title: 'TikTok Application Clone',
       image:'social-tiktok-cover-img.png',
       description: `This TikTok clone recreates the fun of endless video 
@@ -130,7 +144,7 @@ projects: Project[] = [
       featured: false
     },
     {
-      id: 10,
+      id: 11,
       title: 'Lost & Found',
       image:'lost-nd-found-cover-img.png',
       description: `Easily reunite lost items with their rightful owners using Lost & Found—a user-friendly mobile app available 
@@ -141,7 +155,7 @@ projects: Project[] = [
       featured: false
     },
     {
-      id: 11,
+      id: 12,
       title: 'E-commerce product page',
       image:'product-page-img-cover.png',
       description: `This responsive e-commerce product page allows users to view a lightbox gallery, switch product images via thumbnails, 
@@ -153,15 +167,17 @@ projects: Project[] = [
       featured: false
     },
     {
-      id: 12,
-      title: 'Rock Paper Scissors',
-      description: `Allow users to enjoy an optimized game layout across all screen sizes as they play Rock, Paper, Scissors 
-      against the computer, with optional features including score persistence after browser refresh and an extended mode featuring 
-      Rock, Paper, Scissors, Lizard, Spock.`,
-      image: 'rock-paper-scissors-cover-img.png',
-      technologies: ['HTML', 'Java Script', 'TypeScripy', 'CSS'],
-      liveUrl: 'https://www.linkedin.com/in/mohamedmousa-/',
-      githubUrl: 'https://github.com/mohamedmousa77/Rock--Paper--Scissors-game',
+      id: 13,
+      title: 'Point Of Sale',
+      description: `It’s revolutionizes 
+      workforce management, offering a comprehensive solution for companies to effortlessly track employee attendance, requests, 
+      and related insights. With dual interfaces catering to both managers and employees, the app streamlines communication and 
+      enhances transparency within the workplace. Utilizing Flutter for cross-platform functionality, “Attendance” ensures a 
+      seamless experience for users on both App Store and Play Store.`,
+      image: 'pos-cover-img.png',
+      technologies: ['Flutter', 'Dart', 'Rest API'],
+      liveUrl: 'https://www.linkedin.com/posts/mohamedmousa-_flutter-flutterdev-flutterdeveloper-activity-6940025351460765696-hSEZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC2EQFwBWq7g1Ci3vEvUZMVDQ8EeZTv42JY',
+      githubUrl: 'https://github.com/mohamedmousa77/Point-Of-Sale-Application',
       featured: true
     },
   ];
