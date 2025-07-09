@@ -10,6 +10,7 @@ body {
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
+  scroll-padding-top: 80px;
 }
 
 .container {
@@ -17,9 +18,9 @@ body {
   margin: 0 auto;
   padding: 0 20px; */
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 
@@ -93,6 +94,11 @@ body {
   transform: translateY(-2px);
 }
 @media (max-width: 768px) {
+  .section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -167,7 +173,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .section-title {

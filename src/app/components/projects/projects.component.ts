@@ -181,6 +181,16 @@ projects: Project[] = [
       featured: true
     },
   ];
+  expanded: boolean[] = [];
+
+  ngOnInit() {
+    this.expanded = this.projects.map(() => false); // inizializza array con false
+  }
+
+  toggleExpand(index: number) {
+    this.expanded[index] = !this.expanded[index];
+  }
+
 
   filterProjects(showFeatured: boolean = false) {
     return showFeatured ? this.projects.filter(p => p.featured) : this.projects;

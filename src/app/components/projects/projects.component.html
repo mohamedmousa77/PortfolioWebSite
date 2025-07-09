@@ -6,7 +6,7 @@
     </div>
     
     <div class="projects-grid">
-      <div class="project-card" *ngFor="let project of projects">
+      <div class="project-card" *ngFor="let project of projects; let i = index">
         <div class="project-image">
           <img [src]="project.image" [alt]="project.title">
           <div class="project-overlay">
@@ -23,7 +23,13 @@
         
         <div class="project-content">
           <h3 class="project-title">{{project.title}}</h3>
-          <p class="project-description">{{project.description}}</p>
+          <!-- <p class="project-description">{{project.description}}</p> -->
+          <p class="project-description">
+            {{ expanded[i] ? project.description : (project.description | slice:0:120) + '...' }}
+            <a href="#" (click)="toggleExpand(i); $event.preventDefault()" class="read-more-link">
+              {{ expanded[i] ? 'Read less' : 'Read more' }}
+            </a>
+          </p>
           
           <div class="project-technologies">
             <span class="tech-tag" *ngFor="let tech of project.technologies">
